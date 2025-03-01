@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="m-0 p-0 bg-[#11071F] font-[Poppins]">
+    <!-- nav-bar -->
+    <nav
+      class="fixed top-0 z-50 w-full px-4 py-2 md:px-10 md:py-5 bg-[#1b0b2d] bg-opacity-70 backdrop-blur backdrop-saturate-200"
+    >
+      <div
+        class="container mx-auto flex justify-between items-center flex-wrap md:flex-nowrap"
+      >
+        <div class="flex items-center">
+          <img src="src/Objects.svg" class="h-10" />
+          <span class="text-2xl text-[#7127BA] font-bold px-4"
+            >My Portfolio</span
+          >
+        </div>
+
+        <!-- Desktop Menu -->
+        <div class="hidden md:flex space-x-6">
+          <a href="#" class="text-[#7127BA] font-bold">Home</a>
+          <a href="#About_me" class="text-white font-bold">About me</a>
+          <a href="#Projects" class="text-white font-bold">Projects</a>
+          <a href="#Contact" class="text-white font-bold">Contact</a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-toggle" class="md:hidden">
+          <svg
+            class="w-6 h-6 text-white"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu (Hidden by Default) -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden flex flex-col mt-3 space-y-2 bg-[#1b0b2d] rounded-lg p-4"
+      >
+        <a href="#" class="text-[#7127BA] font-bold">Home</a>
+        <a href="#About_me" class="text-white font-bold">About me</a>
+        <a href="#Projects" class="text-white font-bold">Projects</a>
+        <a href="#Contact" class="text-white font-bold">Contact</a>
+      </div>
+    </nav>
+
+    <script>
+      document.getElementById("menu-toggle").addEventListener("click", () => {
+        document.getElementById("mobile-menu").classList.toggle("hidden");
+      });
+    </script>
+
+    <!-- Home Section -->
+<div class="content px-5 py-2 md:px-32">
+    <div class="flex flex-col items-center justify-evenly my-20 md:flex-row" id="Home">
+        <!-- Profile Image -->
+        <img src="/src/Me.svg" class="p-6" />
+
+        <!-- Text Content -->
+        <div class="flex flex-col p-6 md:w-3/4 text-white">
+            <h1 class="text-3xl font-semibold">
+                Hello! I Am <span class="text-[#7127BA]">Haritha</span>
+            </h1>
+            <p class="text-xl font-medium my-8">
+                Computer Science Major | Full Stack Developer at DCS | Graphic & UI Designer at 300DPI | Core Team Member at Developer Community SASTRA & Google Developer Student Clubs SASTRA Deemed University
+            </p>
+            
+            <!-- Buttons -->
+            <div class="flex gap-x-10">
+                <button class="bg-[#7562E0] border-2 border-[#7562E0] rounded text-white font-medium px-5 py-2">
+                    Resume
+                </button>
+                <button class="border-2 border-[#7562E0] rounded text-white font-medium px-5 py-2">
+                    Hire Me
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+      <!-- about me -->
+      <div class="about-me mx-6 my-32" id="About_me">
+        <div class="text-3xl text-[#7562E0] mb-12 font-bold">About Me</div>
+        <p class="text-xl font-medium text-white">
+          Lorem ipsum dolor sit amet consectetur. Amet pellentesque vitae morbi
+          purus fringilla posuere sit. Enim non sed habitant odio amet eu ipsum.
+          Quis enim sed nunc orci morbi parturient elit. Dolor viverra nec
+          ornare ac viverra et mauris imperdiet. Urna feugiat turpis neque
+          malesuada imperdiet. Eros etiam penatibus laoreet sed nulla phasellus
+          amet ac purus.
+        </p>
+      </div>
+      <!-- Education -->
+      <div class="education mx-6 my-32" id="Education">
+        <div class="text-3xl text-[#7562E0] mb-12 font-bold">Education</div>
+        <div
+          class="flex flex-col justify-between text-white gap-24 md:flex-row"
+        >
+          <div
+            class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] border-[#4F228D] border-t-8 rounded-2xl px-10 py-8 md:w-1/2"
+          >
+            <h2 class="text-2xl font-semibold pb-5">
+              Course Name-2020 to Present
+            </h2>
+            <h5 class="text-xl font-medium my-2">University Name</h5>
+            <p class="text-xl font-normal">Grade: 0.00</p>
+            <p class="text-xl font-normal my-1">Skills acquired:</p>
+            <ul class="text-x1 font-normal list-disc ml-8">
+              <li>Lorem ipsum dolor sit</li>
+              <li>Lorem ipsum dolor sit</li>
+            </ul>
+          </div>
+          <div
+            class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] border-[#4F228D] border-t-8 rounded-2xl px-10 py-8 md:w-1/2"
+          >
+            <h2 class="text-2xl font-semibold pb-5">
+              Board of Higher Secondary Eductaion-2018 to 2020
+            </h2>
+            <h5 class="text-xl font-medium my-2">School Name</h5>
+            <p class="text-xl font-normal">Grade: 0.00</p>
+          </div>
+        </div>
+      </div>
+      <!-- Featured projects -->
+      <div class="featured-proj mx-6 my-32" id="Projects">
+        <h3 class="text-3xl text-[#7562E0] mb-12 font-bold">
+          Featured Projects
+        </h3>
+        <div class="flex gap-5 justify-around flex-col md:flex-row">
+          <div
+            class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] border-[#4F228D] border-t-8 rounded-2xl gap-5 px-9 py-16"
+          >
+            <div><img src="src/Rectangle 10.png" width="100%" /></div>
+            <div
+              class="con-head text-center text-[#7562E0] py-5 text-2xl font-medium"
+            >
+              Lorem ipsum
+            </div>
+            <div
+              class="con-body text-justify text-[#FFFFFF] text-xl font-medium"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nibh sit et laoreet massa
+              maecenas eu montes vel eget. Tristique eget nisl tortor
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] border-[#4F228D] border-t-8 rounded-2xl px-9 py-16"
+          >
+            <div><img src="src/Rectangle 10.png" width="100%" /></div>
+            <div
+              class="con-head text-center text-[#7562E0] py-5 text-2xl font-medium"
+            >
+              Lorem ipsum
+            </div>
+            <div
+              class="con-body text-justify text-[#FFFFFF] text-xl font-medium"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nibh sit et laoreet massa
+              maecenas eu montes vel eget. Tristique eget nisl tortor
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-r from-[#130428] via-[#251043] to-[#38126D] border-[#4F228D] border-t-8 rounded-2xl px-9 py-16"
+          >
+            <div><img src="src/Rectangle 10.png" width="100%" /></div>
+            <div
+              class="con-head text-center text-[#7562E0] py-5 text-2xl font-medium"
+            >
+              Lorem ipsum
+            </div>
+            <div
+              class="con-body text-justify text-[#FFFFFF] text-xl font-medium"
+            >
+              Lorem ipsum dolor sit amet consectetur. Nibh sit et laoreet massa
+              maecenas eu montes vel eget. Tristique eget nisl tortor
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Recommendations -->
+      <div class="recommendations mx-6 my-32">
+        <h1 class="text-3xl text-[#7562E0] mb-12 font-bold">Recommendations</h1>
+        <div
+          class="carousel flex flex-row justify-between border-2 rounded-2xl border-[#7562E0] text-[#FFFFFF]"
+        >
+          <button
+            class="prev-btn flex text-3xl items-center w-1/4 md:w-auto"
+            onclick="prev()"
+          >
+            <img src="/src/arrow_back.svg" />
+          </button>
+          <div class="mid-container flex flex-col py-8 justify-between">
+            <ul class="carousel-track flex max-w-5xl font-medium">
+              <li class="current-slide">
+                <p class="text-xl md:text-2x1">
+                  "Lorem ipsum dolor sit amet consectetur. Hac est vestibulum
+                  maecenas venenatis augue. Sed risus rhoncus velit cursus lacus
+                  sed eget. Massa tempus at a tristique. Mauris suspendisse vel
+                  nisl ultrices sapien donec. Sagittis lectus blandit odio
+                  pellentesque viverra. Nisl dui vitae pulvinar euismod quis.
+                  Lacinia tellus diam ac amet."
+                </p>
+                <p class="text-xl text-right md:text-3x1">-Lorem ipsum</p>
+              </li>
+              <li class="hidden">
+                <p class="text-xl md:text-2x1">
+                  "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo
+                  odio perspiciatis, perferendis nostrum, voluptates voluptas
+                  unde corrupti excepturi quod assumenda, necessitatibus sed
+                  ullam accusantium nulla nobis provident non dolores animi."
+                </p>
+                <p class="text-xl text-right md:text-3x1">-Lorem ipsum</p>
+              </li>
+              <li class="hidden">
+                <p class="text-xl md:text-2x1">
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Temporibus unde necessitatibus totam, blanditiis rerum atque
+                  laborum veniam et placeat quis ad sit aliquam accusantium
+                  dignissimos. Laudantium non adipisci veritatis cupiditate?"
+                </p>
+                <p class="text-xl text-right md:text-3x1">-Lorem ipsum</p>
+              </li>
+              <li class="hidden">
+                <p class="text-xl md:text-2x1">
+                  "Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Similique, consequatur. Maiores consectetur, debitis nisi
+                  officia facere saepe mollitia eius. Eum, odit labore cumque
+                  omnis blanditiis illum eius dolorem voluptatum alias."
+                </p>
+                <p class="text-xl text-right md:text-3x1">-Lorem ipsum</p>
+              </li>
+              <li class="hidden">
+                <p class="text-xl md:text-xl">
+                  "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Placeat sit id fugit debitis nemo alias obcaecati soluta
+                  quibusdam? Aliquid rerum tenetur obcaecati, harum tempora
+                  voluptatem cumque exercitationem magni. Ducimus, porro."
+                </p>
+                <p class="text-xl text-right md:text-3x1">-Lorem ipsum</p>
+              </li>
+            </ul>
+            <div class="flex my-5 justify-center">
+              <button
+                class="current-dot h-3 w-3 bg-[#11071F] rounded-full border-2 border-[#7562E0] bg-[#7562E0] mx-4"
+              ></button>
+              <button
+                class="h-3 w-3 bg-[#11071F] rounded-full border-2 border-[#7562E0] mx-4"
+              ></button>
+              <button
+                class="h-3 w-3 bg-[#11071F] rounded-full border-2 border-[#7562E0] mx-4"
+              ></button>
+              <button
+                class="h-3 w-3 bg-[#11071F] rounded-full border-2 border-[#7562E0] mx-4"
+              ></button>
+              <button
+                class="h-3 w-3 bg-[#11071F] rounded-full border-2 border-[#7562E0] mx-4"
+              ></button>
+            </div>
+          </div>
+          <button
+            class="next-btn flex text-3xl items-center w-1/4 md:w-auto"
+            onclick="next()"
+          >
+            <img src="/src/arrow_forward.svg" />
+          </button>
+        </div>
+      </div>
+      <!-- Contact and Footer -->
+      <div
+        class="flex-col flex justify-between mx-6 my-32 md:flex-row"
+        id="Contact"
+      >
+        <div class="flex flex-col md:w-1/2">
+          <p class="text-2xl text-[#7562E0] font-bold mb-4">Connect with me</p>
+          <div class="flex flex-row mb-10 gap-5">
+            <a href="#"><img src="/src/facebook.svg" class="flex" /></a>
+            <a href="#"><img src="/src/instagram.svg" class="flex" /></a>
+            <a href="#"><img src="/src/twitter.svg" class="flex" /></a>
+            <a href="#"><img src="/src/mail.svg" class="flex" /></a>
+          </div>
+        </div>
+        <div class="flex flex-col md:w-1/2">
+          <p class="text-2xl text-[#FFFFFF] font-bold pb-6">
+            Contact me, let's make magic together
+          </p>
+          <input
+            class="bg-[#F5F5F5] bg-opacity-30 placeholder:text-[#F5F5F5] placeholder:text-opacity-50 rounded-lg block p-[10px] my-2 h-16 min-w-full"
+            type="text"
+            placeholder="Name:"
+          />
+          <input
+            class="bg-[#F5F5F5] bg-opacity-30 placeholder:text-[#F5F5F5] placeholder:text-opacity-50 rounded-lg block p-[10px] my-2 h-16 min-w-full"
+            type="email"
+            placeholder="Email:"
+          />
+          <input
+            class="bg-[#F5F5F5] bg-opacity-30 placeholder:text-[#F5F5F5] placeholder:text-opacity-50 rounded-lg block p-[10px] my-2 h-24 min-w-full"
+            placeholder="Message:"
+          />
+          <button class="bg-[#7562E0] my-2 w-44 h-12 rounded-lg text-white">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="text-[#7562E0] text-center font-bold my-4">Designed by DCS</p>
+    </footer>
+    <script src="carousel.js"></script>
+  </body>
+</html>
